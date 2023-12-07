@@ -14,8 +14,15 @@ body {
     }
     #header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 30px;
+    }
+    h1{
+    color: #6e575a;
+    font-size: 60px;
+    font-style: italic;
+    text-shadow: 2px 2px white;
     }
     #input {
     background-color: rgba(142, 127, 161, 0.3);
@@ -23,6 +30,7 @@ body {
     border: 3px solid #FFF78A;
     padding: 15px;
     font-size: 20px;
+    color: #000080;
     }
     #input:focus{
         background-color: #FFFF;
@@ -39,13 +47,14 @@ body {
     #date{
         color: #FFFF;
         font-size: 24px; 
+        margin: 0;
     }
     #now{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    #temp{
+    #temp, #feels, #var,#wind{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -57,10 +66,17 @@ body {
         text-shadow: 5px 10px black;
         margin: 0;
     }
-    #feelsLike{
+    #feelsLikeF, #feelsLikeC{
         color: #FFFF;
         font-size: 30px; 
-        font-weight: bold; 
+        font-weight: lighter;
+        margin: 10px;
+    }
+    #windF, #windC{
+        color: #FFFF;
+        font-size: 26px; 
+        font-weight: lighter;
+        margin: 0;
     }
     #condition{
         color: #FFFF;
@@ -68,9 +84,10 @@ body {
         font-weight: bold;
         font-style: italic; 
     }
-    #variation{
+    #variationF, #variationC{
         color: #FFFF;
         font-size: 26px; 
-        font-weight: bold;
+        font-weight: lighter;
     }
+    
     
