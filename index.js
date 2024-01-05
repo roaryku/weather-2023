@@ -48,6 +48,17 @@ function displayResult(result){
      let condition = document.querySelector("#condition");
      condition.textContent = `${result.weather[0].description}`;
 
+        //  if(condition === "overcast clouds"){
+    //     condition.textContent = "You will miss the sun today";
+    //     console.log(condition)
+    //  }
+
+    //  let conditions = `${result.weather[0].main}`;
+    //  if(conditions === "Rain"){
+    //     conditions.textContent = "You will miss the sun today";
+    //     console.log(conditions)
+    //  }
+
      let variationF = document.querySelector("#variationF");
      variationF.innerHTML = `H: ${Math.round(result.main.temp_max)}<span>°</span>  L: ${Math.round(result.main.temp_min)}<span>°</span> F`;
 
@@ -83,4 +94,14 @@ function getOurDate() {
     showDate.textContent = `${day}` + " " + `${todayDate}` + " " + `${month}` + " " + `${year}`;
 
 }
+
+function quatesAdded() {
+    let conditions = `${result.weather[0].main}`;
+    if(conditions === "Rain"){
+    conditions.textContent = "You will miss the sun today";
+    console.log(conditions)
+     }
+
+}
+    quatesAdded(); 
 
